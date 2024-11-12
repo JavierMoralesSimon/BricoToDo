@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <link rel="stylesheet" href="estilosformulario.css">
+</head>
+<body>
+    <h1>Formulario de Información</h1>
+    <form action="formulario.php" method="post">
+        <fieldset>
+            <legend>Sus Datos</legend>
+
+            <p>
+                <label for="">Nombre y apellidos:</label>
+                <input type="text" maxlength="50">
+            </p>
+
+            <p>
+                <label for="">Contraseña:</label>
+                <input type="text" maxlength="8">
+            </p>
+
+            <p>
+                <label for="">Usuario:</label>
+                <input type="text" disabled value="anónimo">
+            </p>
+
+            <p>
+                <label for="nivel">Nivel:</label>
+            </p>
+
+            <p>
+                <input type="radio" id="nivel" name="nivel">
+                <label for="pro">Profesional</label>
+            </p>
+
+            <p>
+                <input type="radio" id="nivel" name="nivel" checked>
+                <label for="ava">Avanzado</label>          
+            </p>
+
+            <p>
+                <input type="radio" id="nivel" name="nivel">
+                <label for="pri">Principiante</label>
+            </p>
+        </fieldset>
+
+            <p>
+            <label for="nac">Nacionalidad:</label>
+            <select name="nac" id="nac">
+                <option value="esp">España</option>
+                <option value="usa">USA</option>
+                <option value="bur">Burkina Faso</option>
+            </select>
+            </p>
+
+            <p>
+            <label for="des">Descripción:</label>
+            <textarea name="" id=""></textarea>
+            </p>
+
+            <p>
+                <input type="checkbox" checked>
+                Deseo recibir información sobre novedades y ofertas
+            </p>
+
+            <p>
+                <input type="checkbox">
+                Declaro haber leído y aceptar las condiciones generales del programa y la normativa sobre protección de datos
+            </p>
+
+            <p>
+                Adjuntar foto:
+                <input type="file" name="Seleccionar archivo" id="" value="Seleccionar archivo">
+            </p>
+
+            <p>
+                <input type="submit" name="enviar" id="enviar" value="Enviar">
+                <input type="reset" name="" id="" value="Borrar datos">
+            </p>
+    </form>
+</body>
+</html>
